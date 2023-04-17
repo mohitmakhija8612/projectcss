@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>My Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section>
+        <h2>About Me</h2>
+        <figure id="about">
+            <img src="./project_pic.png" alt="my profile pic">
+        </figure>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet metus euismod, rhoncus mauris id,
+            commodo lectus. Nam hendrerit lorem ut posuere aliquam. Nam ut purus malesuada, hendrerit mi nec, rhoncus
+            lectus. Sed at ipsum vel turpis facilisis hendrerit. Donec pharetra, justo sit amet pharetra tincidunt, enim
+            sapien vulputate sem, nec faucibus risus est vel tortor.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="./css project photos.jpg" alt="project-1">
+            <div class="project-info">
+                <h3>Project 1</h3>
+                <p>The program should allow the user to set the time for the alarm to go off, and it should also allow
+                    the user to set the tone or sound that will play when the alarm goes off.The program should run
+                    continuously in the background, checking the current time against the alarm time set by the user.
+                    When the current time matches the alarm time, the program should trigger the selected sound or tone
+                    to play and display a message indicating that the alarm has gone off.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="./iot css project.webp" alt="project-2">
+            <div class="project-info">
+                <h3>Project 2</h3>
+                <p>A weather reporting system IoT project is a system that uses Internet of Things (IoT) technology to
+                    gather weather data from sensors placed in different locations and report it to a central server.
+                    The system can be used to monitor weather conditions such as temperature, humidity, air pressure,
+                    and rainfall, and report them in real-time.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="./restaurant css project.jpg" alt="">
+            <div class="project-info">
+                <h3>Project 3</h3>
+                <p>A restaurant website created using HTML (Hypertext Markup Language) is a platform for restaurants to
+                    showcase their menu, services, and brand to potential customers. The website typically includes
+                    several sections, such as a homepage, menu page, about page, contact page, and reservation page.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Page</h2>
+        <h2>Mohit Makhija</h2>
+        <fieldset>
+            <legend>Contact Info</legend>
+
+            <ul>
+                <li>
+                    Address = 498 Grove St E, Barrie, Ontario L4M5Z1
+                </li>
+
+                <li>
+                    Email = mohitmakhija8612@gmail.com
+                </li>
+
+                <li>
+                    Phone no. = +1(647)286-5997
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>My Social Profile</legend>
+
+            <ul class="color">
+                <li>
+                    <a href="https://www.instagram.com/mohit____makhija/?igshid=YmMyMTA2M2Y%3D">Instagram Link</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/mohitmakhija8612">github Link</a>
+                </li>
+            </ul>
+        </fieldset>
+
+        <p>
+        <h3>
+            For any inquiry contact me on my number or mail or else fill this form to reach me at.
+        </h3>
+        </p>
+        <form action="./thanks.html" method="post" name="lesson-03 contact me" netlify>
+            <fieldset>
+
+                <legend>Your Information</legend>
+            </fieldset>
+            <div>
+                <label for="firstName">First Name </label><br>
+                <input type="text" name="firstName" id="firstName" required maxlength="10" minlength="2"
+                    placeholder="mohit"><br>
+                <small>REQUIRED!!</small>
+            </div>
+            <div>
+                <label for="lastName">last Name </label><br>
+                <input type="text" name="lastName" id="lastName" required maxlength="10" minlength="2"
+                    placeholder="makhija"><br>
+                <small>REQUIRED!!</small>
+
+            </div>
+            <div>
+                <label for="company">company Name </label><br>
+                <input type="text" name="company" id="company" required maxlength="50" minlength="3"
+                    placeholder="ONGC Ltd">
+
+            </div>
+            <fieldset>
+                <legend>Contact options</legend>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" required placeholder="mohit@ltd.com"><br>
+                    <small>REQUIRED!!</small>
+                </div>
+                <div>
+                    <label for="tel">Phone:</label><br>
+                    <input type="tel" name="tel" id="tel" placeholder="1(647)545-8989">
+                </div>
+                <div>
+                    <label for="linkedin">Linkedin</label><br>
+                    <input type="linkedin" name="linkedin" id="linkedin" placeholder="@username">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Type of Work you are seeking for</legend>
+                <div>
+                    <label for="inquiryType">What type of employment you want?</label><br>
+                    <select name="inquiryType" id="inquiryType">
+                        <option>Select an Inquiry option.....</option>
+                        <option value="Business">Business Proposal</option>
+                        <option value="Employment ">Career Oppurtunities</option>
+                        <option value="Freelance">Freelancing Inquiry</option>
+                        <option value="web">Web Designing</option>
+                        <option value="general">General inquiry</option>
+                    </select><br>
+                    <small>REQUIRED!!</small>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="Suggestions">Your Messages or Suggestion</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10" required
+                        placeholder="Your message here"></textarea><br>
+                    <small>REQUIRED!!</small>
+                </div>
+
+            </fieldset>
+
+            <div>
+                <input type="submit" value="Submit Inquiry">
+            </div>
+
+        </form>
+        <footer>&copy;2022 Mohit Makhija</footer>
+        </main>
+
+    </section>
